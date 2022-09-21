@@ -1,0 +1,1301 @@
+Process 1 is stored in slot 0
+Process 1 is stored in memory from 0 to 19
+
+===============================================================
+
+[1;30mClock Cycle: 0[0m
+[1;34mReady Queue contains: [0m[0;34m[]
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#1)[0m
+[1;32m> semWait userInput[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           1            |
+|     1      |        RUNNING         |
+|     2      |           0            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign c input     |
+|     11     |  semSignal userInput   |
+|     12     |   semWait userOutput   |
+|     13     |    printFromTo a c     |
+|     14     |  semSignal userOutput  |
+|     15     |           -            |
+|     16     |           -            |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           -            |
+|     21     |           -            |
+|     22     |           -            |
+|     23     |           -            |
+|     24     |           -            |
+|     25     |           -            |
+|     26     |           -            |
+|     27     |           -            |
+|     28     |           -            |
+|     29     |           -            |
+|     30     |           -            |
+|     31     |           -            |
+|     32     |           -            |
+|     33     |           -            |
+|     34     |           -            |
+|     35     |           -            |
+|     36     |           -            |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+Process 2 is stored in slot 1
+Process 2 is stored in memory from 20 to 39
+
+===============================================================
+
+[1;30mClock Cycle: 1[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#2)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#1)[0m
+[1;32m> assign a input[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           1            |
+|     1      |        RUNNING         |
+|     2      |           0            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign c input     |
+|     11     |  semSignal userInput   |
+|     12     |   semWait userOutput   |
+|     13     |    printFromTo a c     |
+|     14     |  semSignal userOutput  |
+|     15     |           -            |
+|     16     |           -            |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           2            |
+|     21     |          NEW           |
+|     22     |           0            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |     assign b input     |
+|     31     |  semSignal userInput   |
+|     32     |      semWait file      |
+|     33     |     writeFile a b      |
+|     34     |     semSignal file     |
+|     35     |           -            |
+|     36     |           -            |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 2[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#1)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#2)[0m
+[1;32m> semWait userInput[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           1            |
+|     1      |       PREEMPTED        |
+|     2      |           0            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign c input     |
+|     11     |  semSignal userInput   |
+|     12     |   semWait userOutput   |
+|     13     |    printFromTo a c     |
+|     14     |  semSignal userOutput  |
+|     15     |           -            |
+|     16     |           -            |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           2            |
+|     21     |        RUNNING         |
+|     22     |           0            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |     assign b input     |
+|     31     |  semSignal userInput   |
+|     32     |      semWait file      |
+|     33     |     writeFile a b      |
+|     34     |     semSignal file     |
+|     35     |           -            |
+|     36     |           -            |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 3[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#1)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#2)[0m
+[1;32m> assign a input[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           1            |
+|     1      |       PREEMPTED        |
+|     2      |           0            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign c input     |
+|     11     |  semSignal userInput   |
+|     12     |   semWait userOutput   |
+|     13     |    printFromTo a c     |
+|     14     |  semSignal userOutput  |
+|     15     |           -            |
+|     16     |           -            |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           2            |
+|     21     |        RUNNING         |
+|     22     |           0            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |     assign b input     |
+|     31     |  semSignal userInput   |
+|     32     |      semWait file      |
+|     33     |     writeFile a b      |
+|     34     |     semSignal file     |
+|     35     |           -            |
+|     36     |           -            |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+[1;33mProcess 1 written to disk[0m
+Process 3 is stored in slot 0
+Process 3 is stored in memory from 0 to 19
+[1;34mProcess 3 swapped with process 1[0m
+[1;31mProcess 1 loaded from disk[0m
+[1;33mProcess 2 written to disk[0m
+Process 1 is stored in slot 1
+Process 1 is stored in memory from 20 to 39
+[1;34mProcess 1 swapped with process 2[0m
+
+===============================================================
+
+[1;30mClock Cycle: 4[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#3)[0m
+2. [0;34mProcess (#2)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#1)[0m
+[1;32m> assign c input[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           3            |
+|     1      |          NEW           |
+|     2      |           0            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |  semSignal userInput   |
+|     11     |      semWait file      |
+|     12     |  assign b readFile a   |
+|     13     |     semSignal file     |
+|     14     |   semWait userOutput   |
+|     15     |        print b         |
+|     16     |  semSignal userOutput  |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           1            |
+|     21     |        RUNNING         |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |     assign c input     |
+|     31     |  semSignal userInput   |
+|     32     |   semWait userOutput   |
+|     33     |    printFromTo a c     |
+|     34     |  semSignal userOutput  |
+|     35     |           -            |
+|     36     |           -            |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 5[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#3)[0m
+2. [0;34mProcess (#2)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#1)[0m
+[1;32m> semSignal userInput[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           3            |
+|     1      |          NEW           |
+|     2      |           0            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |  semSignal userInput   |
+|     11     |      semWait file      |
+|     12     |  assign b readFile a   |
+|     13     |     semSignal file     |
+|     14     |   semWait userOutput   |
+|     15     |        print b         |
+|     16     |  semSignal userOutput  |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           1            |
+|     21     |        RUNNING         |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |     assign c input     |
+|     31     |  semSignal userInput   |
+|     32     |   semWait userOutput   |
+|     33     |    printFromTo a c     |
+|     34     |  semSignal userOutput  |
+|     35     |           -            |
+|     36     |           -            |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 6[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#2)[0m
+2. [0;34mProcess (#1)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#3)[0m
+[1;32m> semWait userInput[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           3            |
+|     1      |        RUNNING         |
+|     2      |           0            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |  semSignal userInput   |
+|     11     |      semWait file      |
+|     12     |  assign b readFile a   |
+|     13     |     semSignal file     |
+|     14     |   semWait userOutput   |
+|     15     |        print b         |
+|     16     |  semSignal userOutput  |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           1            |
+|     21     |       PREEMPTED        |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |     assign c input     |
+|     31     |  semSignal userInput   |
+|     32     |   semWait userOutput   |
+|     33     |    printFromTo a c     |
+|     34     |  semSignal userOutput  |
+|     35     |           -            |
+|     36     |           -            |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 7[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#2)[0m
+2. [0;34mProcess (#1)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#3)[0m
+[1;32m> assign a input[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           3            |
+|     1      |        RUNNING         |
+|     2      |           0            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |  semSignal userInput   |
+|     11     |      semWait file      |
+|     12     |  assign b readFile a   |
+|     13     |     semSignal file     |
+|     14     |   semWait userOutput   |
+|     15     |        print b         |
+|     16     |  semSignal userOutput  |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           1            |
+|     21     |       PREEMPTED        |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |     assign c input     |
+|     31     |  semSignal userInput   |
+|     32     |   semWait userOutput   |
+|     33     |    printFromTo a c     |
+|     34     |  semSignal userOutput  |
+|     35     |           -            |
+|     36     |           -            |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+[1;33mProcess 3 written to disk[0m
+Process 2 is stored in slot 0
+Process 2 is stored in memory from 0 to 19
+[1;34mProcess 2 swapped with process 3[0m
+
+===============================================================
+
+[1;30mClock Cycle: 8[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#1)[0m
+2. [0;34mProcess (#3)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#2)[0m
+[1;32m> assign b input[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           2            |
+|     1      |        RUNNING         |
+|     2      |           2            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign b input     |
+|     11     |  semSignal userInput   |
+|     12     |      semWait file      |
+|     13     |     writeFile a b      |
+|     14     |     semSignal file     |
+|     15     |        print b         |
+|     16     |  semSignal userOutput  |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           1            |
+|     21     |       PREEMPTED        |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |     assign c input     |
+|     31     |  semSignal userInput   |
+|     32     |   semWait userOutput   |
+|     33     |    printFromTo a c     |
+|     34     |  semSignal userOutput  |
+|     35     |           -            |
+|     36     |           -            |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 9[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#1)[0m
+2. [0;34mProcess (#3)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#2)[0m
+[1;32m> semSignal userInput[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           2            |
+|     1      |        RUNNING         |
+|     2      |           2            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign b input     |
+|     11     |  semSignal userInput   |
+|     12     |      semWait file      |
+|     13     |     writeFile a b      |
+|     14     |     semSignal file     |
+|     15     |        print b         |
+|     16     |  semSignal userOutput  |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           1            |
+|     21     |       PREEMPTED        |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |     assign c input     |
+|     31     |  semSignal userInput   |
+|     32     |   semWait userOutput   |
+|     33     |    printFromTo a c     |
+|     34     |  semSignal userOutput  |
+|     35     |           -            |
+|     36     |           -            |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 10[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#3)[0m
+2. [0;34mProcess (#2)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#1)[0m
+[1;32m> semWait userOutput[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           2            |
+|     1      |       PREEMPTED        |
+|     2      |           2            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign b input     |
+|     11     |  semSignal userInput   |
+|     12     |      semWait file      |
+|     13     |     writeFile a b      |
+|     14     |     semSignal file     |
+|     15     |        print b         |
+|     16     |  semSignal userOutput  |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           1            |
+|     21     |        RUNNING         |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |     assign c input     |
+|     31     |  semSignal userInput   |
+|     32     |   semWait userOutput   |
+|     33     |    printFromTo a c     |
+|     34     |  semSignal userOutput  |
+|     35     |           -            |
+|     36     |           -            |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 11[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#3)[0m
+2. [0;34mProcess (#2)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#1)[0m
+[1;32m> printFromTo a c[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           2            |
+|     1      |       PREEMPTED        |
+|     2      |           2            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign b input     |
+|     11     |  semSignal userInput   |
+|     12     |      semWait file      |
+|     13     |     writeFile a b      |
+|     14     |     semSignal file     |
+|     15     |        print b         |
+|     16     |  semSignal userOutput  |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           1            |
+|     21     |        RUNNING         |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |     assign c input     |
+|     31     |  semSignal userInput   |
+|     32     |   semWait userOutput   |
+|     33     |    printFromTo a c     |
+|     34     |  semSignal userOutput  |
+|     35     |           -            |
+|     36     |           -            |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+[1;33mProcess 1 written to disk[0m
+Process 3 is stored in slot 1
+Process 3 is stored in memory from 20 to 39
+[1;34mProcess 3 swapped with process 1[0m
+
+===============================================================
+
+[1;30mClock Cycle: 12[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#2)[0m
+2. [0;34mProcess (#1)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#3)[0m
+[1;32m> semSignal userInput[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           2            |
+|     1      |       PREEMPTED        |
+|     2      |           2            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign b input     |
+|     11     |  semSignal userInput   |
+|     12     |      semWait file      |
+|     13     |     writeFile a b      |
+|     14     |     semSignal file     |
+|     15     |        print b         |
+|     16     |  semSignal userOutput  |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           3            |
+|     21     |        RUNNING         |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |  semSignal userInput   |
+|     31     |      semWait file      |
+|     32     |  assign b readFile a   |
+|     33     |     semSignal file     |
+|     34     |   semWait userOutput   |
+|     35     |        print b         |
+|     36     |  semSignal userOutput  |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 13[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#2)[0m
+2. [0;34mProcess (#1)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#3)[0m
+[1;32m> semWait file[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           2            |
+|     1      |       PREEMPTED        |
+|     2      |           2            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign b input     |
+|     11     |  semSignal userInput   |
+|     12     |      semWait file      |
+|     13     |     writeFile a b      |
+|     14     |     semSignal file     |
+|     15     |        print b         |
+|     16     |  semSignal userOutput  |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           3            |
+|     21     |        RUNNING         |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |  semSignal userInput   |
+|     31     |      semWait file      |
+|     32     |  assign b readFile a   |
+|     33     |     semSignal file     |
+|     34     |   semWait userOutput   |
+|     35     |        print b         |
+|     36     |  semSignal userOutput  |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 14[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#1)[0m
+2. [0;34mProcess (#3)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#2)[0m
+[1;32m> semWait file[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           2            |
+|     1      |        RUNNING         |
+|     2      |           2            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign b input     |
+|     11     |  semSignal userInput   |
+|     12     |      semWait file      |
+|     13     |     writeFile a b      |
+|     14     |     semSignal file     |
+|     15     |        print b         |
+|     16     |  semSignal userOutput  |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           3            |
+|     21     |       PREEMPTED        |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |  semSignal userInput   |
+|     31     |      semWait file      |
+|     32     |  assign b readFile a   |
+|     33     |     semSignal file     |
+|     34     |   semWait userOutput   |
+|     35     |        print b         |
+|     36     |  semSignal userOutput  |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 15[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#1)[0m
+2. [0;34mProcess (#3)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#2)[0m
+[1;32m> writeFile a b[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           2            |
+|     1      |        RUNNING         |
+|     2      |           2            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign b input     |
+|     11     |  semSignal userInput   |
+|     12     |      semWait file      |
+|     13     |     writeFile a b      |
+|     14     |     semSignal file     |
+|     15     |        print b         |
+|     16     |  semSignal userOutput  |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           3            |
+|     21     |       PREEMPTED        |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |  semSignal userInput   |
+|     31     |      semWait file      |
+|     32     |  assign b readFile a   |
+|     33     |     semSignal file     |
+|     34     |   semWait userOutput   |
+|     35     |        print b         |
+|     36     |  semSignal userOutput  |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+[1;33mProcess 2 written to disk[0m
+Process 1 is stored in slot 0
+Process 1 is stored in memory from 0 to 19
+[1;34mProcess 1 swapped with process 2[0m
+
+===============================================================
+
+[1;30mClock Cycle: 16[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#3)[0m
+2. [0;34mProcess (#2)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#1)[0m
+[1;32m> semSignal userOutput[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           1            |
+|     1      |        RUNNING         |
+|     2      |           6            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign c input     |
+|     11     |  semSignal userInput   |
+|     12     |   semWait userOutput   |
+|     13     |    printFromTo a c     |
+|     14     |  semSignal userOutput  |
+|     15     |        print b         |
+|     16     |  semSignal userOutput  |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           3            |
+|     21     |       PREEMPTED        |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |  semSignal userInput   |
+|     31     |      semWait file      |
+|     32     |  assign b readFile a   |
+|     33     |     semSignal file     |
+|     34     |   semWait userOutput   |
+|     35     |        print b         |
+|     36     |  semSignal userOutput  |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 17[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#2)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#3)[0m
+[1;32m> assign b readFile a[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           -            |
+|     1      |           -            |
+|     2      |           -            |
+|     3      |           -            |
+|     4      |           -            |
+|     5      |           -            |
+|     6      |           -            |
+|     7      |           -            |
+|     8      |           -            |
+|     9      |           -            |
+|     10     |           -            |
+|     11     |           -            |
+|     12     |           -            |
+|     13     |           -            |
+|     14     |           -            |
+|     15     |           -            |
+|     16     |           -            |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           3            |
+|     21     |        RUNNING         |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |  semSignal userInput   |
+|     31     |      semWait file      |
+|     32     |  assign b readFile a   |
+|     33     |     semSignal file     |
+|     34     |   semWait userOutput   |
+|     35     |        print b         |
+|     36     |  semSignal userOutput  |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 18[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#2)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#3)[0m
+[1;32m> semSignal file[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           -            |
+|     1      |           -            |
+|     2      |           -            |
+|     3      |           -            |
+|     4      |           -            |
+|     5      |           -            |
+|     6      |           -            |
+|     7      |           -            |
+|     8      |           -            |
+|     9      |           -            |
+|     10     |           -            |
+|     11     |           -            |
+|     12     |           -            |
+|     13     |           -            |
+|     14     |           -            |
+|     15     |           -            |
+|     16     |           -            |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           3            |
+|     21     |        RUNNING         |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |  semSignal userInput   |
+|     31     |      semWait file      |
+|     32     |  assign b readFile a   |
+|     33     |     semSignal file     |
+|     34     |   semWait userOutput   |
+|     35     |        print b         |
+|     36     |  semSignal userOutput  |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+Process 2 is stored in slot 0
+Process 2 is stored in memory from 0 to 19
+
+===============================================================
+
+[1;30mClock Cycle: 19[0m
+[1;34mReady Queue contains: [0m[0;34m
+1. [0;34mProcess (#3)[0m
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#2)[0m
+[1;32m> semSignal file[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           2            |
+|     1      |        RUNNING         |
+|     2      |           6            |
+|     3      |           0            |
+|     4      |           19           |
+|     5      |          var0          |
+|     6      |          var1          |
+|     7      |          var2          |
+|     8      |   semWait userInput    |
+|     9      |     assign a input     |
+|     10     |     assign b input     |
+|     11     |  semSignal userInput   |
+|     12     |      semWait file      |
+|     13     |     writeFile a b      |
+|     14     |     semSignal file     |
+|     15     |           -            |
+|     16     |           -            |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           3            |
+|     21     |       PREEMPTED        |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |  semSignal userInput   |
+|     31     |      semWait file      |
+|     32     |  assign b readFile a   |
+|     33     |     semSignal file     |
+|     34     |   semWait userOutput   |
+|     35     |        print b         |
+|     36     |  semSignal userOutput  |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 20[0m
+[1;34mReady Queue contains: [0m[0;34m[]
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#3)[0m
+[1;32m> semWait userOutput[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           -            |
+|     1      |           -            |
+|     2      |           -            |
+|     3      |           -            |
+|     4      |           -            |
+|     5      |           -            |
+|     6      |           -            |
+|     7      |           -            |
+|     8      |           -            |
+|     9      |           -            |
+|     10     |           -            |
+|     11     |           -            |
+|     12     |           -            |
+|     13     |           -            |
+|     14     |           -            |
+|     15     |           -            |
+|     16     |           -            |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           3            |
+|     21     |        RUNNING         |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |  semSignal userInput   |
+|     31     |      semWait file      |
+|     32     |  assign b readFile a   |
+|     33     |     semSignal file     |
+|     34     |   semWait userOutput   |
+|     35     |        print b         |
+|     36     |  semSignal userOutput  |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 21[0m
+[1;34mReady Queue contains: [0m[0;34m[]
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#3)[0m
+[1;32m> print b[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           -            |
+|     1      |           -            |
+|     2      |           -            |
+|     3      |           -            |
+|     4      |           -            |
+|     5      |           -            |
+|     6      |           -            |
+|     7      |           -            |
+|     8      |           -            |
+|     9      |           -            |
+|     10     |           -            |
+|     11     |           -            |
+|     12     |           -            |
+|     13     |           -            |
+|     14     |           -            |
+|     15     |           -            |
+|     16     |           -            |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           3            |
+|     21     |        RUNNING         |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |  semSignal userInput   |
+|     31     |      semWait file      |
+|     32     |  assign b readFile a   |
+|     33     |     semSignal file     |
+|     34     |   semWait userOutput   |
+|     35     |        print b         |
+|     36     |  semSignal userOutput  |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
+
+===============================================================
+
+[1;30mClock Cycle: 22[0m
+[1;34mReady Queue contains: [0m[0;34m[]
+[0m
+[1;34m[CHOSEN][0m [0;34mProcess (#3)[0m
+[1;32m> semSignal userOutput[0m
+
+[1;30m================ MEMORY ===============[0m
++------------+------------------------+
+|  [1;30mAddress[0m   |        [1;30mContent[0m         |
++------------+------------------------+
+|     0      |           -            |
+|     1      |           -            |
+|     2      |           -            |
+|     3      |           -            |
+|     4      |           -            |
+|     5      |           -            |
+|     6      |           -            |
+|     7      |           -            |
+|     8      |           -            |
+|     9      |           -            |
+|     10     |           -            |
+|     11     |           -            |
+|     12     |           -            |
+|     13     |           -            |
+|     14     |           -            |
+|     15     |           -            |
+|     16     |           -            |
+|     17     |           -            |
+|     18     |           -            |
+|     19     |           -            |
+|     20     |           3            |
+|     21     |        RUNNING         |
+|     22     |           2            |
+|     23     |           20           |
+|     24     |           39           |
+|     25     |          var0          |
+|     26     |          var1          |
+|     27     |          var2          |
+|     28     |   semWait userInput    |
+|     29     |     assign a input     |
+|     30     |  semSignal userInput   |
+|     31     |      semWait file      |
+|     32     |  assign b readFile a   |
+|     33     |     semSignal file     |
+|     34     |   semWait userOutput   |
+|     35     |        print b         |
+|     36     |  semSignal userOutput  |
+|     37     |           -            |
+|     38     |           -            |
+|     39     |           -            |
++------------+------------------------+
